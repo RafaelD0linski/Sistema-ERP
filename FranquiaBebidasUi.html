@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Franquia de Bebidas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .produto {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      border-bottom: 1px solid #ddd;
+    }
+    .produto:last-child {
+      border-bottom: none;
+    }
+    .produto img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .produto-info {
+      flex-grow: 1;
+      margin-left: 1rem;
+    }
+    .produto-info h3 {
+      margin: 0;
+    }
+    .produto-info p {
+      margin: 0.3rem 0;
+      color: #555;
+    }
+    .btn {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Franquia de Bebidas</h1>
+  </header>
+
+  <div class="container">
+    <h2>Catálogo de Produtos</h2>
+
+    <div class="produto">
+      <img src="https://via.placeholder.com/80" alt="Coca-Cola">
+      <div class="produto-info">
+        <h3>Coca-Cola 2L</h3>
+        <p>Refrigerante gelado, perfeito para acompanhar suas refeições.</p>
+        <p><strong>R$ 9,00</strong></p>
+      </div>
+      <button class="btn">Adicionar ao carrinho</button>
+    </div>
+
+    <div class="produto">
+      <img src="https://via.placeholder.com/80" alt="Cerveja Heineken">
+      <div class="produto-info">
+        <h3>Cerveja Heineken 600ml</h3>
+        <p>Clássica e refrescante, ideal para momentos especiais.</p>
+        <p><strong>R$ 7,50</strong></p>
+      </div>
+      <button class="btn">Adicionar ao carrinho</button>
+    </div>
+
+    <div class="produto">
+      <img src="https://via.placeholder.com/80" alt="Água Mineral">
+      <div class="produto-info">
+        <h3>Água Mineral 500ml</h3>
+        <p>Hidratação garantida com qualidade e pureza.</p>
+        <p><strong>R$ 2,00</strong></p>
+      </div>
+      <button class="btn">Adicionar ao carrinho</button>
+    </div>
+  </div>
+</body>
+</html>
